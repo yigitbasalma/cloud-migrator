@@ -1,0 +1,15 @@
+generals:
+  draw_system_map: true
+
+source:
+  provider: aws
+  profile: default
+  region: us-east-1
+
+destination:
+  provider: gcloud
+
+targets:
+  - network
+  - compute
+  - database
