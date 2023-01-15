@@ -1,3 +1,5 @@
 pyyaml==6.0
 boto3==1.24.64
+diagrams==0.23.3
+coloredlogs==15.0.1
 -e git+https://github.com/yigitbasalma/bunch.git#egg=bunch

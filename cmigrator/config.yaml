@@ -3,7 +3,7 @@ generals:
 
 source:
   provider: aws
-  profile: default
+  profile: warewave
   region: us-east-1
 
 destination:
@@ -11,5 +11,6 @@ destination:
 
 targets:
   - network
-  - compute
-  - database
+
+logging:
+  level: INFO
