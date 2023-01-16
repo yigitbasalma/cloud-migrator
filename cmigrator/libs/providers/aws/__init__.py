@@ -31,4 +31,5 @@ ACCOUNT_ID = _.list_users()["Users"][0]["Arn"].split(":")[4]
 def controller():
     for target in CONFIG.targets:
         _module = import_module(f"cmigrator.libs.providers.{PROVIDER_CONFIG.provider}.{target}")
-        _module.start()
+        provider = _module.Provider()
+        provider.get_resources()
